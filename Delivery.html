@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Delivery</title>
+
+</head>
+
+<body>
+    <div class="tab2">
+        <table>
+            <tr>
+                <th valign="top">
+                    <table>
+                        <tr>
+                            <th align="left">
+                    <form action="https://docs.google.com/forms/d/e/1FAIpQLSeUGlZOC3Z6wuVh8H4lZ6_rSrtR5BcQnenkVIJrVVtrUc8LAQ/formResponse" target="_self" method="POST">
+                        Transaction Type
+                        <br>
+                        <input type="text" name="entry.70698290" value="Delivery">
+                        <br>Store
+                        <br>
+                        <input type="text" name="entry.1564763104" placeholder="Store">
+                        <br>Date
+                        <br>
+                        <input type="text" name="entry.1511658848" placeholder="MM/DD/YY">
+                        <br>RR#
+                        <br>
+                        <input type="text" name="entry.1737185544" placeholder="REQUIRED">
+                        <br>DR#
+                        <br>
+                        <input type="text" name="entry.2078919175" placeholder="REQUIRED">
+                        <br>Item Code
+                        <br>
+                        <input type="text" name="entry.1538437853" placeholder="REQUIRED">
+                        <br>Quantity
+                        <br>
+                        <input type="text" name="entry.1938221942" placeholder=" ">
+                        <br>Remarks
+                        <br>
+                        <input type="text" name="entry.939244469" placeholder="">
+                        <br>
+                        <input type="submit" value="submit">
+                    </form>
+                </th>
+                        </tr>
+                    </table>
+                </th>
+                <th>
+                    <table cellpadding="0">
+                        <tr>
+                            <th>
+                                <div>
+                                <iframe name="Delivery" src="Query.html" width="700" height="23" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">
+                                </iframe>
+                                </div>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th>
+                                <iframe id="Que" src="https://docs.google.com/spreadsheets/d/11wW2n5hUtlh4R7TR54PHnSohu0S_TbiOQJHalRLhPEM/htmlembed/sheet?gid=781604001&range=A1:G35" width="700" height="895" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">
+                                </iframe>
+                    <script>
+                        window.setInterval("reloadIFrame();", 3000);
+
+                        function reloadIFrame() {
+                            var frameHolder = document.getElementById('Que');
+                            frameHolder.src = "https://docs.google.com/spreadsheets/d/11wW2n5hUtlh4R7TR54PHnSohu0S_TbiOQJHalRLhPEM/htmlembed/sheet?gid=781604001&range=A1:G35"
+                        }
+                    </script>
+                            </th>
+                        </tr>
+                    </table>           
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

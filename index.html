@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html><head>    <meta http-equiv="content-type" content="text/html; charset=utf-8" />    <title>Purchasing Receiving and Delivery</title>    <link rel="stylesheet" href="Content\style.css">
+    <script
+  src="https://code.jquery.com/jquery-3.4.1.js"
+  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+  crossorigin="anonymous"></script></head><body>    <h1>Purchasing Receiving and Delivery</h1><table><tr><th valign="top" width="200">
+<img src="Content\ot.jpg" height="200" width="200"><img src="Content\rt.jpg" height="200" width="200"></th><th>    <div class="pc-tab">        <input checked="checked" id="tab1" type="radio" name="pct" />        <input id="tab2" type="radio" name="pct" />
+        <input id="tab3" type="radio" name="pct" />        <input id="tab4" type="radio" name="pct" />        <nav>            <ul>                <li class="tab1">                    <label for="tab1">Receiving</label>                </li>                <li class="tab2">                    <label for="tab2">Delivery</label>                </li>
+                <li class="tab3">                    <label for="tab3">Query</label>                </li>
+                <li class="tab4">
+                    <label for="tab4">Inventory</label>
+                </li>            </ul>        </nav>        <section>            <div class="tab1">                    <h4 align="left"><a target="Receiving" href="Receive.html">Make a transaction</a></h4>                <iframe name="Receiving" width="850" height="600" frameborder="0" marginheight="0" marginwidth="0">                </iframe>            </div>            <div class="tab2">                <h4 align="left"><a target="Delivery" href="Delivery.html">Make a transaction</a></h4>
+                <iframe name="Delivery" width="850" height="600" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">
+                </iframe>            </div>            <div class="tab3">                <h4 align="left"><a target="Query" href="Query.html">Make a query</a></h4>                <iframe name="Query" width="850" height="600" frameborder="0" marginheight="0" marginwidth="0" scrolling="no">
+                </iframe>
+            </div>
+            <div class="tab4">
+                <iframe id="zel" src="https://docs.google.com/spreadsheets/d/11wW2n5hUtlh4R7TR54PHnSohu0S_TbiOQJHalRLhPEM/htmlembed/sheet?gid=3156197" width="1100" height="895" frameborder="0" marginheight="0" marginwidth="0">
+                </iframe>
+                    <script>
+                        window.setInterval("reloadIFrame();", 10000);
+
+                        function reloadIFrame() {
+                            var frameHolder = document.getElementById('zel');
+                            frameHolder.src = "https://docs.google.com/spreadsheets/d/11wW2n5hUtlh4R7TR54PHnSohu0S_TbiOQJHalRLhPEM/htmlembed/sheet?gid=3156197&range=A1:H50"
+                        }
+                    </script>
+            </div>        </section>    </div></th></tr></table></body></html>
